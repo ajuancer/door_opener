@@ -42,7 +42,7 @@ void loop() {
   if(received = "11101") {
     sendModule.switchOn("11111", "00010");      // For static code
     digitalWrite(LED_BUILTIN, HIGH);
-    digitalWrite(11, LOW);                      // For rolling code
+    digitalWrite(11, HIGH);                     // For rolling code
   } else {
     digitalWrite(LED_BUILTIN, LOW);
     sendModule.switchOff("11111", "00010");
